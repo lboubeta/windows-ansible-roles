@@ -12,7 +12,7 @@
     #
     ansible_connection: winrm
     #ansible_pipelining: true
-    #ansible_winrm_port: 5985
+    ansible_winrm_port: 5985
     #ansible_winrm_scheme: http
     ansible_winrm_transport: basic
     ansible_winrm_message_encryption: always
