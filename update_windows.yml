@@ -9,13 +9,13 @@
     #
     # Ansible WinRM configuration
     #
-    #ansible_connection: winrm
-    #ansible_pipelining: true
+    ansible_connection: winrm
+    ansible_pipelining: true
     #ansible_winrm_port: 5985
     #ansible_winrm_scheme: http
-    #ansible_winrm_transport: ntlm
-    #ansible_winrm_message_encryption: always
-    #ansible_winrm_server_cert_validation: ignore
+    ansible_winrm_transport: basic
+    ansible_winrm_message_encryption: always
+    ansible_winrm_server_cert_validation: ignore
 
     #ansible_winrm_user: Administrator
     #ansible_winrm_password: Foobar_12
@@ -45,8 +45,8 @@
     #
     # Common Windows connection parameters
     #
-    ansible_become_method: runas
-    #ansible_become_user: Administrator
+    # ansible_become_method: runas
+    # ansible_become_user: Administrator
 
     #
     # dotnet_optimize
