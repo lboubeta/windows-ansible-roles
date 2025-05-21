@@ -1,0 +1,6 @@
+collections:
+  # Install a collection from Ansible Galaxy.
+  - name: https://github.com/myllynen/windows-ansible-roles.git
+    type: git
+    version: main
+  - name: community.windows
