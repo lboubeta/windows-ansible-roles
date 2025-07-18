@@ -9,7 +9,7 @@
           Content-Type: "application/json"
         body: |
           {
-            "text": "Mensaje enviado desde playbook"
+            "text": "Mensaje enviado desde playbook {{ playbook_name }}"
           }
         body_format: json
         status_code: 200
