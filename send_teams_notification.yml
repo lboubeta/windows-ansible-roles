@@ -1,0 +1,15 @@
+- name: Prueba Teams con URI
+  hosts: localhost
+  tasks:
+    - name: Enviar mensaje a Teams
+      ansible.builtin.uri:
+        url: "{{ teams_webhook_url }}"
+        method: POST
+        headers:
+          Content-Type: "application/json"
+        body: |
+          {
+            "text": "Mensaje enviado desde playbook"
+          }
+        body_format: json
+        status_code: 200
