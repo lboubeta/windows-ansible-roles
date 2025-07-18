@@ -1,5 +1,7 @@
 - name: Prueba Teams con URI
   hosts: localhost
+  vars:
+    playbook_name: "send_teams_notification.yml"
   tasks:
     - name: Enviar mensaje a Teams
       ansible.builtin.uri:
