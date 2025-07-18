@@ -9,7 +9,7 @@
           Content-Type: "application/json"
         body: |
           {
-            "text": "Mensaje enviado desde playbook {{ ansible_playbook_name }}"
+            "text": "Mensaje enviado desde playbook {{ ansible_os_family }}"
           }
         body_format: json
         status_code: 200
