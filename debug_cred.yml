@@ -4,4 +4,4 @@
   tasks:
     - name: Debug credential
       ansible.builtin.debug:
-        msg: "Debugging credentials from debug_cred.yml {{ sn_password }}"
+        msg: "Debugging credentials from environment var {{ lookup('env', 'SN_PASSWORD') }}"
