@@ -1,6 +1,7 @@
 ---
 
 - hosts: localhost
+  become: true
   no_log: true
   tasks:
     - name: Debug credential
