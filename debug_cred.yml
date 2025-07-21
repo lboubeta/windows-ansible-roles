@@ -1,6 +1,7 @@
 ---
 
 - hosts: localhost
+  no_log: true
   tasks:
     - name: Debug credential
       ansible.builtin.debug:
